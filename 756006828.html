@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://img.shiyunhong.com/index.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://img.shiyunhong.com/index.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://img.shiyunhong.com/index.ico">
+  <link rel="mask-icon" href="https://img.shiyunhong.com/index.ico" color="#222">
+  <meta name="google-site-verification" content="0N_b-lnY1mke19sXa9Y3dxlPmY7fdpjbL3heLzZYDf4">
+  <meta name="yandex-verification" content="85a40ae684bce54e">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.shiyunhong.com","root":"/","images":"/images","scheme":"Gemini","version":"8.6.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":true,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<meta name="description" content="Feature 特性 [独家] REST API加载，发布评论 [独家] 评论者可在设置的时间内修改或删除评论，不必担心评论错误 [独家] Origami Markdown区块(支持补全高亮，Gutenberg区块) [独家] Origami 代码区块(支持补全高亮，Gutenberg区块) Live Chat实时聊天 REST API实时搜索 前端修改主题 3种布局风格 侧栏右置&#x2F;左置&#x2F;不显示">
+<meta property="og:type" content="article">
+<meta property="og:title" content="🎨 Origami | 一个拥有许多强大功能，简洁，轻快的WordPress主题">
+<meta property="og:url" content="https://blog.shiyunhong.com/756006828.html">
+<meta property="og:site_name" content="小石同学">
+<meta property="og:description" content="Feature 特性 [独家] REST API加载，发布评论 [独家] 评论者可在设置的时间内修改或删除评论，不必担心评论错误 [独家] Origami Markdown区块(支持补全高亮，Gutenberg区块) [独家] Origami 代码区块(支持补全高亮，Gutenberg区块) Live Chat实时聊天 REST API实时搜索 前端修改主题 3种布局风格 侧栏右置&#x2F;左置&#x2F;不显示">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://raw.githubusercontent.com/syfxlin/origami/master/screenshot.webp">
+<meta property="article:published_time" content="2019-09-21T19:51:22.000Z">
+<meta property="article:modified_time" content="2021-07-13T06:01:21.983Z">
+<meta property="article:author" content="小石">
+<meta property="article:tag" content="WordPress">
+<meta property="article:tag" content="wp主题">
+<meta property="article:tag" content="主题">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/syfxlin/origami/master/screenshot.webp">
+
+
+<link rel="canonical" href="https://blog.shiyunhong.com/756006828.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.shiyunhong.com/756006828.html","path":"756006828.html","title":"🎨 Origami | 一个拥有许多强大功能，简洁，轻快的WordPress主题"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>🎨 Origami | 一个拥有许多强大功能，简洁，轻快的WordPress主题 | 小石同学</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146773388-1"></script>
+  <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-146773388-1","only_pageview":false}</script>
+  <script src="/js/third-party/analytics/google-analytics.js"></script>
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?699e7fe0ec253c5f9c33ea9ce284474f"></script>
+
+
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f8b357a2067f415bbbda4488d12b7929"}'></script>
+<link rel="dns-prefetch" href="https://comment.blog.shiyunhong.com">
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="小石同学" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">小石同学</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">一个广西00后的个人网站</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">233</span></a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">7</span></a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">80</span></a></li>
+        <li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+        <li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="link fa fa-link fa-fw"></i>友情链接</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Feature-%E7%89%B9%E6%80%A7"><span class="nav-number">1.</span> <span class="nav-text">Feature 特性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Loading-speed-%E5%8A%A0%E8%BD%BD%E9%80%9F%E5%BA%A6"><span class="nav-number">2.</span> <span class="nav-text">Loading speed 加载速度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Demo-%E6%BC%94%E7%A4%BA"><span class="nav-number">3.</span> <span class="nav-text">Demo 演示</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Docs-%E6%96%87%E6%A1%A3"><span class="nav-number">4.</span> <span class="nav-text">Docs 文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Features-%E5%8A%9F%E8%83%BD"><span class="nav-number">5.</span> <span class="nav-text">Features 功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-%E5%AE%89%E8%A3%85"><span class="nav-number">6.</span> <span class="nav-text">Install 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E4%BD%9C%E8%80%85"><span class="nav-number">7.</span> <span class="nav-text">主题作者</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E4%BD%9C%E8%80%85%E7%9A%84%E7%BB%93%E8%AF%AD"><span class="nav-number">8.</span> <span class="nav-text">主题作者的结语</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-overview">
+            <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="小石"
+      src="https://img.shiyunhong.com/gravatar.webp">
+  <p class="site-author-name" itemprop="name">小石</p>
+  <div class="site-description" itemprop="description">我们的征途是星辰大海</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">80</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">233</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3hzMzE0" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;xs314"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOmFkbWluI3NoaXl1bmhvbmcuY29t" title="E-Mail → mailto:admin#shiyunhong.com"><i class="fa fa-envelope fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.shiyunhong.com/756006828.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="https://img.shiyunhong.com/gravatar.webp">
+      <meta itemprop="name" content="小石">
+      <meta itemprop="description" content="我们的征途是星辰大海">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小石同学">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          🎨 Origami | 一个拥有许多强大功能，简洁，轻快的WordPress主题
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-09-22 03:51:22" itemprop="dateCreated datePublished" datetime="2019-09-22T03:51:22+08:00">2019-09-22</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-07-13 14:01:21" itemprop="dateModified" datetime="2021-07-13T14:01:21+08:00">2021-07-13</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/WordPress/" itemprop="url" rel="index"><span itemprop="name">WordPress</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/756006828.html#waline-comments" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" id="/756006828.html" data-xid="/756006828.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+    <span id="/756006828.html" class="post-meta-item leancloud_visitors" data-flag-title="🎨 Origami | 一个拥有许多强大功能，简洁，轻快的WordPress主题" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p><a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/syfxlin/origami/master/screenshot.webp"><img class="alignnone" src="https://raw.githubusercontent.com/syfxlin/origami/master/screenshot.webp" alt="" width="2928" height="2000" /></a></p>
+<h2 id="Feature-特性"><a href="#Feature-特性" class="headerlink" title="Feature 特性"></a>Feature 特性</h2><ul>
+<li>[独家] REST API加载，发布评论</li>
+<li>[独家] 评论者可在设置的时间内修改或删除评论，不必担心评论错误</li>
+<li>[独家] Origami Markdown区块(支持补全高亮，Gutenberg区块)</li>
+<li>[独家] Origami 代码区块(支持补全高亮，Gutenberg区块)</li>
+<li>Live Chat实时聊天</li>
+<li>REST API实时搜索</li>
+<li>前端修改主题</li>
+<li>3种布局风格</li>
+<li>侧栏右置/左置/不显示</li>
+<li>灵感/时光轴/友链模板</li>
+<li>Markdown评论</li>
+<li>流程图/时序图/甘特图/Katex支持</li>
+<li>Lazyload</li>
+<li>WorkBox注册和卸载</li>
+<li>OwO表情</li>
+<li>页脚显示建站至今的时间</li>
+<li>评论者标注（站长，友链认证）</li>
+<li>6个短代码，多种页面模板</li>
+<li>可视化编辑器和文本编辑器添加短代码</li>
+<li>阅读转移</li>
+<li>代码高亮</li>
+<li>文章目录</li>
+<li>ImgBox</li>
+<li>评论页面选单</li>
+<li>…</li>
+</ul>
+<h2 id="Loading-speed-加载速度"><a href="#Loading-speed-加载速度" class="headerlink" title="Loading speed 加载速度"></a>Loading speed 加载速度</h2><p>Gtmetrix：100%(Pagespeed) 97%(YSlow) 0.6s(加载时间)</p>
+<p>Lighthouse：100%(Desktop) 100%(Mobile)</p>
+<p>web.dev：99% Loading time：946ms(第一次加载) 187ms(第二次加载，即有缓存情况)</p>
+<h2 id="Demo-演示"><a href="#Demo-演示" class="headerlink" title="Demo 演示"></a>Demo 演示</h2><p><span class="exturl" data-url="aHR0cHM6Ly9ibG9nLml4ay5tZS8=">青空之蓝<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9vcmlnYW1pLml4ay5tZS8=">Origami演示站<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="Docs-文档"><a href="#Docs-文档" class="headerlink" title="Docs 文档"></a>Docs 文档</h2><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3N5ZnhsaW4vb3JpZ2FtaS93aWtp">Wiki<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="Features-功能"><a href="#Features-功能" class="headerlink" title="Features 功能"></a>Features 功能</h2><p>请前往Origami演示站查看</p>
+<h2 id="Install-安装"><a href="#Install-安装" class="headerlink" title="Install 安装"></a>Install 安装</h2><p>前往 <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3N5ZnhsaW4vb3JpZ2FtaS9yZWxlYXNlcw==">Releases<i class="fa fa-external-link-alt"></i></span> 下载，然后上传到WordPress中，确保主题文件夹名称为Origami</p>
+<p><strong>首次安装请先将对主题进行设置，防止出现未知问题</strong></p>
+<p><strong>从v1版本升级请在升级后重新对主题进行设置</strong></p>
+<p>若要启用WordBox，请先将主题文件夹下的js文件夹中的sw.js复制至WordPress根目录</p>
+<p>已经修复了WorkBox的缓存规则，这里说明一下，启用WorkBox会使用户的浏览器的请求完全被WorkBox接管，一旦启用后，页面的加载速度将得到质的提升，但是若要删除就必须加载卸载WorkBox的js，否则用户访问的页面将不会更新</p>
+<p>若站点使用https，同时又需要引用http的资源，请将功能设置中的阻止混合内容关闭</p>
+<h2 id="主题作者"><a href="#主题作者" class="headerlink" title="主题作者"></a>主题作者</h2><ul>
+<li>作者：Otstar Lin</li>
+<li>来源： Origami – 简洁轻快的WordPress主题 | 青空之蓝</li>
+<li>链接：<span class="exturl" data-url="aHR0cHM6Ly9ibG9nLml4ay5tZS90aGVtZS1vcmlnYW1pLmh0bWw=">https://blog.ixk.me/theme-origami.html<i class="fa fa-external-link-alt"></i></span></li>
+</ul>
+<h2 id="主题作者的结语"><a href="#主题作者的结语" class="headerlink" title="主题作者的结语"></a>主题作者的结语</h2><p>首先感谢你能看到最后，同时感谢你对该主题的兴趣。无论你是否已经完成建站，我都诚挚邀请你来尝试一下这个主题。 然后，这款主题是开发不久的，尽管我在发布的时候做了细致的测试，也难免存在Bug，若你在使用中遇到问题，请及时联系我进行修复。 由于第一次接触这种“大型项目”，项目中的代码可能非常混乱，我会在未来继续优化代码 另外，Origami主题是免费发布的，根据_GPL V3.0_许可证开源，你不需要为此付出任何费用，但是，你必须保留底部的<strong>Theme - Origami By Otstar Lin</strong> 标识。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>赞助我</div>
+  <button>
+    <i class="fa fa-qrcode fa-2x" style="line-height:35px;"></i>
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="https://img.shiyunhong.com/sponsor/weixinpay.webp" alt="小石 微信">
+        <span>微信</span>
+      </div>
+      <div>
+        <img src="https://img.shiyunhong.com/sponsor/alipay.webp" alt="小石 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>原作者： </strong>小石
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://blog.shiyunhong.com/756006828.html" title="🎨 Origami | 一个拥有许多强大功能，简洁，轻快的WordPress主题">https://blog.shiyunhong.com/756006828.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="https://t.me/xschanel">
+          <span class="icon">
+            <i class="fab fa-telegram"></i>
+          </span>
+
+          <span class="label">Telegram</span>
+        </a>
+      </div>
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/WordPress/" rel="tag"><i class="fa fa-tag"></i> WordPress</a>
+              <a href="/tags/wp%E4%B8%BB%E9%A2%98/" rel="tag"><i class="fa fa-tag"></i> wp主题</a>
+              <a href="/tags/%E4%B8%BB%E9%A2%98/" rel="tag"><i class="fa fa-tag"></i> 主题</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/1598017360.html" rel="prev" title="手动更新wordpress解决大部分更新疑难杂症">
+                  <i class="fa fa-chevron-left"></i> 手动更新wordpress解决大部分更新疑难杂症
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/1875320177.html" rel="next" title="MagnetW-磁力搜网页版源码-磁力链接聚合搜索源码">
+                  MagnetW-磁力搜网页版源码-磁力链接聚合搜索源码 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline-comments"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><span class="exturl" data-url="aHR0cHM6Ly9iZWlhbi5taWl0Lmdvdi5jbg==">桂ICP备19008028号 </span>
+      <img src="https://img.shiyunhong.com/ghs.webp" alt=""><span class="exturl" data-url="aHR0cDovL3d3dy5iZWlhbi5nb3YuY24vcG9ydGFsL3JlZ2lzdGVyU3lzdGVtSW5mbz9yZWNvcmRjb2RlPTQ1MDMzMDAyMDAwMTM1">桂公网安备45033002000135号 </span>
+  </div>
+
+<div class="copyright">
+  &copy; 2017 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小石</span>
+</div>
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":false,"archive":false,"delay":true,"timeout":3000,"priority":true,"url":"https://blog.shiyunhong.com/756006828.html"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-CN","enable":true,"serverURL":"https://comment.blog.shiyunhong.com","placeholder":"留个评论吧","avatar":"","meta":["nick","mail","link"],"pageSize":10,"visitor":true,"comment_count":true,"requiredFields":["nick","mail"],"wordLimit":0,"dark":"auto","submit":"发射","avatarCDN":"https://sdn.geekzu.org/avatar/","emoji":["https://cdn.jsdelivr.net/gh/walinejs/emojis@master/tieba","https://cdn.jsdelivr.net/gh/walinejs/emojis@master/alus","https://cdn.jsdelivr.net/gh/walinejs/emojis@master/bilibili","https://cdn.jsdelivr.net/gh/walinejs/emojis@master/weibo"],"el":"#waline-comments","libUrl":"https://cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js","path":"/756006828.html"}</script>
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() => 
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => {
+    new Waline(CONFIG.waline);
+  });
+});
+</script>
+</body>
+</html>
